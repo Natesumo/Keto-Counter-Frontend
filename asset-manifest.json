@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Keto-Counter-Frontend/static/css/main.f8de3345.chunk.css",
+    "main.js": "/Keto-Counter-Frontend/static/js/main.b5554ad5.chunk.js",
+    "main.js.map": "/Keto-Counter-Frontend/static/js/main.b5554ad5.chunk.js.map",
+    "runtime-main.js": "/Keto-Counter-Frontend/static/js/runtime-main.ab7d383d.js",
+    "runtime-main.js.map": "/Keto-Counter-Frontend/static/js/runtime-main.ab7d383d.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Keto-Counter-Frontend/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.0c679041.chunk.js": "/Keto-Counter-Frontend/static/js/2.0c679041.chunk.js",
+    "static/js/2.0c679041.chunk.js.map": "/Keto-Counter-Frontend/static/js/2.0c679041.chunk.js.map",
+    "index.html": "/Keto-Counter-Frontend/index.html",
+    "precache-manifest.65e615bc1d54ba8fe65b294ee911bf0d.js": "/Keto-Counter-Frontend/precache-manifest.65e615bc1d54ba8fe65b294ee911bf0d.js",
+    "service-worker.js": "/Keto-Counter-Frontend/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Keto-Counter-Frontend/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.f8de3345.chunk.css.map": "/Keto-Counter-Frontend/static/css/main.f8de3345.chunk.css.map",
+    "static/js/2.0c679041.chunk.js.LICENSE.txt": "/Keto-Counter-Frontend/static/js/2.0c679041.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab7d383d.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.0c679041.chunk.js",
+    "static/css/main.f8de3345.chunk.css",
+    "static/js/main.b5554ad5.chunk.js"
+  ]
+}
