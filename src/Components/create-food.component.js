@@ -22,7 +22,7 @@ export default class CreateFood extends Component {
 
   componentDidMount() {
     axios
-      .get("https://keto-counter-backend.herokuapp.com/users/")
+      .get("http://localhost:5000/users/")
       .then((response) => {
         if (response.data.length > 0) {
           this.setState({
@@ -70,7 +70,8 @@ export default class CreateFood extends Component {
       carbs: this.state.carbs,
     };
 
-    axios.post("https://keto-counter-backend.herokuapp.com/foods/add", food);
+    axios
+      .post("http://localhost:5000/foods/add", food)
 
     window.location = "/foodadded";
   }
