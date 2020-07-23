@@ -111,7 +111,7 @@ export default class CreateFood extends Component {
           <div className="form-group">
             <label className="m2 lead">Calories: </label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               value={this.state.calories}
               onChange={this.onChangeCalories}
@@ -120,7 +120,7 @@ export default class CreateFood extends Component {
           <div className="form-group">
             <label className="m2 lead">Carbs (in grams): </label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               value={this.state.carbs}
               onChange={this.onChangeCarbs}
