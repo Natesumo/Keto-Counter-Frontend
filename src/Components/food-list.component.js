@@ -18,7 +18,7 @@ export default class FoodList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/users/")
+      .get("https://keto-counter-backend.herokuapp.com/users/")
       .then((response) => {
         if (response.data.length > 0) {
           this.setState({
@@ -47,19 +47,22 @@ export default class FoodList extends Component {
     };
 
     axios
-      .get("http://localhost:5000/users/" + userchoice.username)
+      .get(
+        "https://keto-counter-backend.herokuapp.com/users/" +
+          userchoice.username
+      )
       .then((response) => {
         this.setState({
-          foods: response.data.foods
+          foods: response.data.foods,
         });
       });
   }
 
   handleClick(food) {
-    axios.post('http://localhost:5000/foods/delete/' + food)
+    axios.post(
+      "https://keto-counter-backend.herokuapp.com/foods/delete/" + food
+    );
   }
-
-
 
   render() {
     return (
@@ -103,20 +106,36 @@ export default class FoodList extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.foods.map(food => {
+            {this.state.foods.map((food) => {
               return (
                 <tr key={food.name}>
                   <td>{food.name}</td>
                   <td>{food.calories}</td>
                   <td>{food.carbs}</td>
-                  <td> <a href="/fooddeleted" onClick={() => this.handleClick(food.name)}>Delete</a></td>
+                  <td>
+                    {" "}
+                    <a
+                      href="/fooddeleted"
+                      onClick={() => this.handleClick(food.name)}
+                    >
+                      Delete
+                    </a>
+                  </td>
                 </tr>
-              )
+              );
             })}
             <tr>
               <td className="lead font-weight-bold">Totals:</td>
-              <td className="lead font-weight-bold">{this.state.foods.map(food => food.calories).reduce((a, b) => a + b, 0)}</td>
-              <td className="lead font-weight-bold">{this.state.foods.map(food => food.carbs).reduce((a, b) => a + b, 0)}</td>
+              <td className="lead font-weight-bold">
+                {this.state.foods
+                  .map((food) => food.calories)
+                  .reduce((a, b) => a + b, 0)}
+              </td>
+              <td className="lead font-weight-bold">
+                {this.state.foods
+                  .map((food) => food.carbs)
+                  .reduce((a, b) => a + b, 0)}
+              </td>
               <td></td>
             </tr>
           </tbody>
